@@ -1,0 +1,88 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// login
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"登录"
+			}
+		},
+		// register
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"注册"
+			}
+		},
+		// editInformation
+		{
+			"path":"pages/editInformation/editInformation",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"个人信息"
+			}
+		},
+		
+		// tabbar
+		{
+			"path": "pages/tabbar/home/home",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"首页"
+			}
+		},
+		{
+			"path": "pages/tabbar/giftarea/giftarea",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"首页"
+			}
+		},
+		{
+			"path": "pages/tabbar/mine/mine",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText":"我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#EF1E46",
+		"list": [{
+				"pagePath": "pages/tabbar/home/home",
+				"iconPath": "static/image/tabbar/home.png",
+				"selectedIconPath": "static/image/tabbar/homeactive.png",
+				"text": "试用专区"
+			},
+			{
+				"pagePath": "pages/tabbar/giftarea/giftarea",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "礼品专区"
+			},
+			{
+				"pagePath": "pages/tabbar/mine/mine",
+				"iconPath": "static/image/tabbar/mine.png",
+				"selectedIconPath": "static/image/tabbar/mineactive.png",
+				"text": "我的"
+			}
+		]
+	}
+}
